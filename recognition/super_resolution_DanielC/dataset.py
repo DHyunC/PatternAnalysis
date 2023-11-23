@@ -1,9 +1,3 @@
-import torchvision.transforms as transforms
-from torchvision.datasets import ImageFolder
-from torch.utils.data import DataLoader, Subset
-from utils import *
-import math
-
 """
 Generate data loaders to be used for training and predicting.
 
@@ -11,6 +5,14 @@ Author: Daniel H Choi
 ID: 46773713
 Date Created: 14/10/2023
 """
+
+import torchvision.transforms as transforms
+from torchvision.datasets import ImageFolder
+from torch.utils.data import DataLoader, Subset
+from utils import *
+import math
+
+
 transform = transforms.Compose([
                             transforms.Grayscale(1),
                             transforms.ToTensor()
