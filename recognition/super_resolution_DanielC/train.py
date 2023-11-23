@@ -1,15 +1,6 @@
 """
 Reference: https://keras.io/examples/vision/super_resolution_sub_pixel/
-"""
 
-from modules import *
-from utils import *
-from dataset import *
-import torch
-import time
-import matplotlib.pyplot as plt
-
-"""
 Train the super-resolution network using the ADNI traning data.
 
 Attributes:
@@ -20,7 +11,20 @@ Attributes:
     - validate_loader:  DataLoader containing ADNI validation data.
     - criterion:    Mean Squared Error loss.
     - Optimizer:    Adam optimizer with learning rate of 0.001.
+
+Author: Daniel H Choi
+ID: 46773713
+Date Created: 14/10/2023
 """
+
+from modules import *
+from utils import *
+from dataset import *
+import torch
+import time
+import matplotlib.pyplot as plt
+
+
 
 # -------
 # Initialise device
