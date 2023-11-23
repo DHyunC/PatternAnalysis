@@ -1,8 +1,3 @@
-from utils import *
-from dataset import *
-import torch
-import matplotlib.pyplot as plt
-
 """
 Creates a prediction of the first 3 images using the saved model.
 If train.py has not been run before, or you do not have a saved model, please
@@ -12,7 +7,18 @@ Attributes:
     - device: "cuda" if nvidia gpu is present, else "cpu". Warning will be 
                printed if gpu is not present.
     - model:   Saved model from model path in utils.py.
+
+Author: Daniel H Choi
+ID: 46773713
+Date Created: 14/10/2023
 """
+
+from utils import *
+from dataset import *
+import torch
+import matplotlib.pyplot as plt
+
+
 # -------
 # Initialise device
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
