@@ -1,5 +1,5 @@
 """
-Generate data loaders to be used for training and predicting.
+Generate data loaders to be used for training, validating and predicting.
 
 Author: Daniel H Choi
 ID: 46773713
