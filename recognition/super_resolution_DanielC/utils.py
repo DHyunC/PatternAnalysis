@@ -1,5 +1,3 @@
-import torchvision.transforms as transforms
-import os
 """
 IO paths to data and parameters to be tuned.
 
@@ -12,7 +10,15 @@ By default:
 
 With default configuration and gpu 3070TI, training should take about 23 
 minutes.
+
+Author: Daniel H Choi
+ID: 46773713
+Date Created: 14/10/2023
 """
+
+import torchvision.transforms as transforms
+import os
+
 
 # IO-paths
 #replace with path to train directory
