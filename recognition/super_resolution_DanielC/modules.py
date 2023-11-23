@@ -1,15 +1,18 @@
 """
 Reference: https://keras.io/examples/vision/super_resolution_sub_pixel/
-"""
 
+SuperResolution network per the keras example. The out and in channels of the 
+convolutional layers has been modified for improved performance.
+
+Author: Daniel H Choi
+ID: 46773713
+Date Created: 14/10/2023
+"""
 import torch.nn as nn
 import torch.nn.functional as F
 from utils import *
 
-"""
-SuperResolution network per the keras example. The out and in channels of the 
-convolutional layers has been modified for improved performance.
-"""
+
 class SuperResolution(nn.Module):
     def __init__(self, upscale_factor=4, channels=1):
         """
